@@ -59,7 +59,7 @@ cacheSolve <- function(x, ...) {
 # create an identity matrix for simplicity. Note: Inverse of identity matrix is identity matrix
 input_matrix= diag(3)
 # create a special cache matrix of input_matrix
-special_input_matrix= makeCacheMatrix(x=diag(3))
+special_input_matrix= makeCacheMatrix(x=input_matrix)
 # check if the inverse exists
 special_input_matrix$get_inv_matrix() #now it should return NULL and 
 # compute the inverse using cacheSolve - it should print "returning computed inverse
